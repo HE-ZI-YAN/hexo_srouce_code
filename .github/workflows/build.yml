@@ -1,0 +1,46 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_blog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm install
+      - run: bash build.sh
+
+      - name: Configure Git # 配置Git
+        env:
+          DEPLOY_PRI: ${{secrets.DEPLOY_PRI}} # 这里就是刚刚配置的私钥了
+          GIT_USERNAME: ${{ github.repository_owner }} #Github用户名，这里用了Actions自带的变量，也可以写死。
+          GIT_EMAIL: ${{ github.repository_owner }}@user.github.com # 邮箱,可以写自己的邮箱。
+        run: |
+          sudo timedatectl set-timezone "Asia/Shanghai"
+          mkdir -p ~/.ssh/
+          echo "$DEPLOY_PRI" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.name '$DEPLOY_PRI'
+          git config --global user.email '$DEPLOY_PRI'
+
+      - name: Commit Blog # 提交文档到Git仓库
+        env:
+          GIT_URL: 'git@github.com:HE-ZI-YAN/HE-ZI-YAN.github.io.git' # 把它换成项目的地址，注意要用SSH格式的。
+        run: |
+          cd public
+          git init
+          git remote add origin $GIT_URL
+          git add -A
+          git commit -m "Blog auto generated."
+
+      - name: Push blog # 推送
+        run: |
+          cd public
+          git push origin HEAD:master --force
