@@ -32,4 +32,5 @@ bin/kibana
 ```
 
 jps查看进程启动情况
-![alt text](image.png)
+![毕设](./assets/bishe/bishe-1713784417376.png)
+
