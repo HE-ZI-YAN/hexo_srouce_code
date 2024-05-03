@@ -22,9 +22,6 @@ menu:
   Friends:
     url: /friends
     icon: fas fa-address-book
-  Diary:
-    url: /diary
-    icon: fas fa-address-book
   # 二级菜单写法如下
   Medias:
    icon: fas fa-list
@@ -367,6 +364,11 @@ disqus:
 livere:
   enable: false
   uid:
+
+# utteranc config, default disabled
+# utteranc 评论模块的配置，默认为不激活
+utteranc:
+  enable: true
 
 # 腾讯人机验证
 # 注意：目前只适配和测试了valine，其它评论系统未调试验证！
