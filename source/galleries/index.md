@@ -1,1 +1,4 @@
-图片
+---
+type: "galleries"
+layout: "galleries"
+---
