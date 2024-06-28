@@ -73,13 +73,13 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  title: 前排提醒
+  text: 技术人通常沉溺于技术的本身，高估了技术本身的价值，而忽视了其它要素的重要性。技术人也应该关注自身身心的成长和建设（比如自省复盘），看到事物的运转是由多种要素构成，重视人的重要性，重视团队和组织的重要性，更加重视生活本身的重要性。所以我为大家专门梳理了这个专栏，来提升相关的认知和认知效率。
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
-  enable: true
+  enable: false
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
@@ -250,13 +250,13 @@ mouseStar:
 
   # 是否激活页面飘雪效果, 只在桌面版网页启用特效
 snowdown:
-  enable: true
+  enable: false
 
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/avatar.jpg
-  career: Software Engineer
+  avatar: https://avatars.githubusercontent.com/u/36721565?v=4
+  career: 软件工程师
   introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
 
 # config my projects informations in about page.
@@ -528,6 +528,8 @@ libs:
     codelang: /libs/codeBlock/codeLang.js
     codecopy: /libs/codeBlock/codeCopy.js
     codeshrink: /libs/codeBlock/codeShrink.js
+    404bodymovin: /libs/404/bodymovin.js
+    404data: /libs/404/data.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
