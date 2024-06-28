@@ -7,6 +7,7 @@ cp -r ./asserts/post-detail.ejs ./themes/hexo-theme-matery/layout/_partial/post-
 cp -r ./asserts/utteranc.ejs ./themes/hexo-theme-matery/layout/_partial/utteranc.ejs
 cp -r ./asserts/404.ejs ./themes/hexo-theme-matery/layout/404.ejs
 cp -r ./asserts/_partial/bg-cover-content.ejs ./themes/hexo-theme-matery/layout/_partial/bg-cover-content.ejs
+cp -r ./asserts/source ./themes/hexo-theme-matery/source
 
 npm install hexo-renderer-pug --save
 npm install hexo-renderer-stylus --save
