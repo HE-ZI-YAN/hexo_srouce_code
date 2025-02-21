@@ -2,15 +2,15 @@
 title: 个人简历
 top: true
 ---
-## 贺子岩
-16682006035 | 2571287622@qq.com | 河北邯郸
-https://www.cnblogs.com/java-six
+## 贺xx
+166xxxxxx035 | 25712xxxx8@qq.com | 河北邯郸
+https://www.cnblogs.com/java-sixxxx
 应届生 | Java后端开发
 
 #### 教育经历
 -----
 <h6 style="display: flex;justify-content: space-between;">
-<span>石家庄铁道大学</span><span>软件工程 | 本科</span><span>2020.09 - 2024.06</span>
+<span>石家庄xx大学</span><span>软件工程 | 本科</span><span>2020.09 - 2024.06</span>
 </h6>
 
 #### 专业技能
@@ -30,7 +30,7 @@ Raft算法，熟悉SpringCloud、SpringCloudAlibaba常见组建的使用
 #### 实习经历
 -----
 <h6 style="display: flex;justify-content: space-between;">
-<span>哈农（河北）数字科技有限责任公司</span><span>后端开发工程师</span><span>2023.05 - 2023.07</span>
+<span>xxxxx有限责任公司</span><span>后端开发工程师</span><span>2023.05 - 2023.07</span>
 </h6>
 
 - **独立负责智慧农业管理平台项目**中用户信息管理模块的开发，在项目上线前成功实现了该模块的全部功能。在紧迫的时间压力下，高效推动任务完成，确保项目按时交付。
